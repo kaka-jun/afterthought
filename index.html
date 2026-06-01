@@ -957,7 +957,7 @@ Optimizer: Kristy Chen (book author), JL Colins, Mr. Money Mustache (都是FIRE�
     }
 
     function formatDate(dateStr) {
-      const date = new Date(dateStr);
+      const date = new Date(dateStr + 'T12:00:00');
       const options = { day: 'numeric', month: 'short', year: 'numeric' };
       return date.toLocaleDateString('en-US', options);
     }
